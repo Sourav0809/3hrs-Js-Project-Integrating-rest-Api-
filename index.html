@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="srcipt.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+        integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>3hrs Js Project</title>
+</head>
+
+<body>
+    <header>
+        <h3 class="header-heading">Seller Dashboard</h3>
+    </header>
+
+    <!-- adding item section -->
+    <div class="add-item-form">
+        <form action="" id="main-form">
+            <label for="productname" class="form-label"> Product Name : </label>
+            <input type="text" name="productname" id="productname">
+            <label for="productname" class="form-label"> Product Price : </label>
+            <input type="number" name="productprice" id="productprice">
+            <input type="submit" value="Submit" class="submit-btn">
+        </form>
+
+    </div>
+
+    <div class="itemlist">
+
+        <ul class="listitems">
+            <!-- <li class="lists"> <span>list1</span> <span>200</span> <button class="delete-btn">Delete</button></li> -->
+
+        </ul>
+
+    </div>
+
+    <!-- total price  -->
+
+    <div class="pricediv"><span>Total Value Worth Of Product : </span>
+        <h3 id="total-price"> 0</h3>
+    </div>
+</body>
+
+</html>

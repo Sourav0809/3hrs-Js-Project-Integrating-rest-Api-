@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-heading{
+    padding: 1rem;
+    background-color: rgb(28, 28, 79);
+    color: white;
+    font-size: 2rem;
+}
+#main-form{
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+.add-item-form{
+    margin-top: .5rem;
+}
+
+.itemlist{
+    margin: 3rem;
+    font-size: 1.5rem;
+    
+}
+
+.listitems{
+    gap: .8rem;
+}
+
+.delete-btn{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.submit-btn{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.id-token{
+    display: none;
+}
+
+.pricediv{
+    font-size: 2rem;
+    margin: 5px;
+}
+
+input{
+    padding: 8px;
+}
