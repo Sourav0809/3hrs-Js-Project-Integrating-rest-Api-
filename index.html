@@ -16,17 +16,23 @@
 <body>
     <header>
         <h3 class="header-heading">Seller Dashboard</h3>
+        <div class="pricediv"><span>Total Value Worth Of Product : </span>
+            <h3 id="total-price"> 0</h3>
+        </div>
     </header>
 
     <!-- adding item section -->
-    <div class="add-item-form">
-        <form action="" id="main-form">
-            <label for="productname" class="form-label"> Product Name : </label>
-            <input type="text" name="productname" id="productname">
-            <label for="productname" class="form-label"> Product Price : </label>
-            <input type="number" name="productprice" id="productprice">
-            <input type="submit" value="Submit" class="submit-btn">
-        </form>
+    <div class="form-div">
+        <div class="add-item-form">
+            <form class="main-form" action="" id="main-form">
+                <label for="productname" class="form-label"> Product Name : </label>
+                <input type="text" name="productname" id="productname" class="form-input">
+                <label for="productname" class="form-label"> Product Price : </label>
+                <input type="number" name="productprice" id="productprice" class="form-input">
+                <input type="submit" value="Add Now" class="submit-btn">
+            </form>
+
+        </div>
 
     </div>
 
@@ -41,9 +47,7 @@
 
     <!-- total price  -->
 
-    <div class="pricediv"><span>Total Value Worth Of Product : </span>
-        <h3 id="total-price"> 0</h3>
-    </div>
+
 </body>
 
 </html>

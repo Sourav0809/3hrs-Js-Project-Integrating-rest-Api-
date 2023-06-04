@@ -1,51 +1,142 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.header-heading{
+.header-heading {}
+
+#main-form {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.add-item-form {
+    margin-top: .5rem;
+}
+
+.itemlist {
+    margin: 3rem;
+    font-size: 1.5rem;
+
+}
+
+.listitems {
+    gap: .8rem;
+}
+
+.delete-btn {
+    padding: 4px 10px;
+    border-radius: 5px;
+    background-color: rgba(12, 12, 65, 0.922);
+    color: white;
+    cursor: pointer;
+}
+
+.submit-btn {
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: #4f8be7;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: rgb(70, 191, 194);
+    color: white;
+    cursor: pointer;
+}
+
+.id-token {
+    display: none;
+}
+
+.pricediv {
+    font-size: 2rem;
+    margin: 5px;
+}
+
+input {
+    padding: 8px;
+}
+
+
+.itemlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listitems {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(179, 214, 248);
+    border-radius: 3px;
+    width: 60%;
+    height: 80%;
+    padding: 10px;
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 1px 15px #4f8be7;
+}
+
+.lists {
+    display: flex;
+
+    background-color: rgb(162, 197, 232);
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px 20px;
+    justify-content: space-between;
+    list-style: none;
+    gap: 2rem;
+}
+
+.add-item-form {
+    background-color: #4f8be7;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+
+.main-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.form-div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.form-input {
+    border-radius: 7px;
+    width: 15rem;
+    font-size: 20px;
+
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
     padding: 1rem;
     background-color: rgb(28, 28, 79);
     color: white;
     font-size: 2rem;
 }
-#main-form{
-    font-size: 1.5rem;
-    margin-left: 10px;
-}
-.add-item-form{
-    margin-top: .5rem;
-}
 
-.itemlist{
-    margin: 3rem;
-    font-size: 1.5rem;
-    
-}
-
-.listitems{
-    gap: .8rem;
-}
-
-.delete-btn{
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.submit-btn{
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.id-token{
-    display: none;
-}
-
-.pricediv{
-    font-size: 2rem;
-    margin: 5px;
-}
-
-input{
-    padding: 8px;
+.pricediv {
+    display: flex;
+    gap: 1rem;
+    padding-right: 10px;
 }

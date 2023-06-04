@@ -12,7 +12,7 @@ let totalPrice = document.getElementById("total-price")
 /* -------------------------------------------------------------------------- */
 
 window.addEventListener("DOMContentLoaded", () => {
-    axios.get("https://crudcrud.com/api/450e0193c77c40f896ac7911461bbb59/ItemLists")
+    axios.get("https://crudcrud.com/api/568315bbd24a470aa21f093563dfe8e3/ItemLists")
         .then((res) => {
             for (let i = 0; i < res.data.length; i++) {
                 ul.innerHTML += `<li class="lists"><span class="id-token">${res.data[i]._id}</span> <span>${res.data[i].ItemName}</span> <span>${res.data[i].itemPrice}</span> <button class="delete-btn">Delete</button></li>`
@@ -37,7 +37,7 @@ mainFrom.addEventListener("submit", async (e) => {
             itemPrice: productPrice.value
         }
 
-        const { data } = await axios.post('https://crudcrud.com/api/450e0193c77c40f896ac7911461bbb59/ItemLists', productObj)
+        const { data } = await axios.post('https://crudcrud.com/api/568315bbd24a470aa21f093563dfe8e3/ItemLists', productObj)
         console.log(data)
 
         const enteredName = productName.value
@@ -66,7 +66,7 @@ ul.addEventListener('click', async (e) => {
             if (confirm("Are You Sure ?")) {
                 const li = e.target.parentElement
                 const idToken = li.firstElementChild.innerText
-                await axios.delete(`https://crudcrud.com/api/450e0193c77c40f896ac7911461bbb59/ItemLists/${idToken}`)
+                await axios.delete(`https://crudcrud.com/api/568315bbd24a470aa21f093563dfe8e3/ItemLists/${idToken}`)
                 totalPrice.textContent = Number(totalPrice.textContent) - Number(li.children[2].textContent)
                 li.remove()
             }
