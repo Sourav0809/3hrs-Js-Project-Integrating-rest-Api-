@@ -73,7 +73,7 @@ input {
     width: 60%;
     height: 80%;
     padding: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 10rem;
     justify-content: center;
     align-items: center;
     box-shadow: -1px 1px 15px #4f8be7;
@@ -112,6 +112,7 @@ input {
 }
 
 .form-div {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 
@@ -139,4 +140,19 @@ header {
     display: flex;
     gap: 1rem;
     padding-right: 10px;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-icon {
+    border-radius: 2rem;
+}
+
+.user-icon .bx {
+    font-size: 3rem;
 }
